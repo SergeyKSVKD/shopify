@@ -1,0 +1,84 @@
+.slider__container {
+    position: relative;
+    width: 100vw;
+    height: 671px;
+}
+
+.slider__container > img {
+    width: 100%;
+    height: calc(100% - 30px);
+    object-fit: cover;
+}
+
+.slideshow {
+    position: absolute;
+    bottom: 0px;
+    background: url(./assets/slidershow.png);
+    height: 129px;
+    width: 100vw;
+}
+
+.shopnow {
+    position: absolute;
+    width: 529px;
+    height: 284px;
+    right: 10vw;
+    bottom: 205px;
+}
+
+.shopnow__title {
+    position: absolute;
+    width: 121px;
+    height: 45px;
+
+    font-weight: var(--fw-normal);
+    font-size: var(--fs-lg);
+    line-height: 42px;
+    color: var(--primary);
+}
+
+.shopnow__subtitle {
+    position: absolute;
+    width: 529px;
+    height: 77px;
+    top: 45px;
+    
+    font-weight: var(--fw-normal);
+    font-size: 56px;
+    line-height: 72px;
+    color: #000000;
+}
+
+.shopnow__text {
+    position: absolute;
+    width: 512px;
+    height: 62px;
+    top: 124px;
+    
+    font-size: 16px;
+    line-height: 29px;
+    color: var(--secondary);
+}
+
+.shopnow__button {
+    position: absolute;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+    width: 140px;
+    height: 47px;
+    background-color: var(--primary);
+}
+
+.shopnow__button:hover {
+    cursor: pointer;
+}
+
+.shopnow__button_text {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+}

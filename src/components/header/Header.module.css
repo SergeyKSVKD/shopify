@@ -1,0 +1,131 @@
+.topHeader {
+    position: relative;
+    max-width: 1920px;
+    height: 50px;
+    background-color: var(--primary);
+}
+
+.text {
+    position: absolute;
+    height: 20px;
+    width: 485px;
+    left: 120px;
+    top: 15px;
+    border-radius: nullpx;
+
+    font-size: 16px;
+    color: var(--white);
+}
+
+.sign {
+    position: absolute;
+    height: 20px;
+    width: 120px;
+    top: 14px;
+    right: 238px;
+
+    font-size: 16px;
+    color: var(--white);
+}
+
+.sign:hover {
+    cursor: pointer;
+}
+
+.line {
+    position: absolute;
+    width: 27px;
+    top: 24px;
+    right: 204px;
+
+    opacity: 0.3;
+
+    border: 1px solid var(--white);
+    transform: rotate(90deg);
+}
+
+.currency {
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    width: 72px;
+    height: 20px;
+    top: 14px;
+    right: 123px;
+}
+
+.currency:hover {
+    cursor: pointer;
+}
+
+.currency__text {
+    font-size: 16px;
+    color: var(--white);
+}
+
+.centerHeader {
+    position: relative;
+    max-width: 1920px;
+    height: 104px;
+}
+
+.nav {
+    width: calc(100% - 232px);
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 28px;
+    margin: 0 123px 0 109px;
+}
+
+.navbar {
+    display: grid;
+    width: 766px;
+    grid-template-columns: repeat(6, 1fr);
+    color: var(--secondary);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.menu.active {
+    color: var(--primary);
+}
+
+.menu:hover {
+    cursor: pointer;
+    color: var(--primary);
+}
+
+.bucketContainer {
+    position: relative;
+    display: flex;
+    width: 62px;
+    height: 24px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bucketContainer:hover {
+    cursor: pointer;
+}
+
+.ellipse {
+    width: 14px;
+    height: 14px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    right: -6px;
+}
+
+.bucket__text {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 10px;
+    line-height: 18px;
+}

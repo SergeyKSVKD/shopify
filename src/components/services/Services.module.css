@@ -1,0 +1,71 @@
+.services__container {
+    position: relative;
+    width: 1194px;
+    height: 178px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.service {
+    display: grid;
+    justify-items: center;
+    position: relative;
+    height: 178px;
+    width: 284px;
+}
+
+.service__title {
+    position: absolute;
+    top: 90px;
+    width: 243px;
+    height: 32px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.service__description {
+    position: absolute;
+    bottom: 0px;
+    width: 284px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--nobel);
+}
+
+.service__ellipse {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--primary);
+    top: 30px;
+    right: 92px;
+}
+
+.worldwide_shipping {
+    position: absolute;
+    right: 107px;
+}
+
+.guarantee {
+    position: absolute;
+    right: 107px;
+}
+
+.securedPayments {
+    position: absolute;
+    right: 107px;
+}
+
+@media (max-width: 1140px) {
+    .services__container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
