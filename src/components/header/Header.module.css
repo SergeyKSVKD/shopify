@@ -44,6 +44,10 @@
     transform: rotate(90deg);
 }
 
+.currency__container {
+    position: relative;
+}
+
 .currency {
     position: absolute;
     display: grid;
@@ -60,8 +64,39 @@
 }
 
 .currency__text {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--secondary);
+}
+
+.currency__active__text {
     font-size: 16px;
     color: var(--white);
+}
+
+.currency__arrow__color path {
+    fill: var(--white);
+}
+
+.currency__select {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    top: 50px;
+    right: 117px;
+    gap: 10px;
+    z-index: 5;
+    background-color: var(--white);
+    visibility: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.currency__select.active {
+    visibility: visible;
+    max-height: 230px;
+    transition: max-height 0.2s ease-in-out;
 }
 
 .centerHeader {
@@ -127,10 +162,11 @@
     justify-content: center;
     color: var(--white);
     font-size: 10px;
-    line-height: 18px;
+    line-height: 14px;
 }
 
 .header__compact {
+    height: 47px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -149,11 +185,10 @@
 }
 
 .compact__menu {
-    display: block;
     visibility: hidden;
     position: absolute;
-    top: 46px;
-    left: -20px;
+    top: 47px;
+    left: -10px;
     z-index: 5;
     display: grid;
     gap: 10px;
@@ -174,4 +209,72 @@
     visibility: visible;
     max-height: 230px;
     transition: max-height 0.2s ease-in-out;
+}
+
+.compactBucketContainer {
+    position: relative;
+    display: flex;
+    width: 165px;
+    height: 24px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.compactBucketContainer:hover {
+    cursor: pointer;
+}
+
+.currency__compact {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    width: 72px;
+    height: 20px;
+}
+
+.currency__compact:hover {
+    cursor: pointer;
+}
+
+.currency__text__compact {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--secondary);
+}
+
+.currency____compact__active__text {
+    font-size: 16px;
+    color: var(--secondary);
+}
+
+.currency__compact__arrow__color path {
+    fill: var(--secondary);
+}
+
+.currency__compact__container {
+    position: relative;
+}
+
+.currency__compact__select {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    top: 43px;
+    gap: 10px;
+    z-index: 5;
+    background-color: var(--white);
+    visibility: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.currency__compact__select.active {
+    visibility: visible;
+    max-height: 230px;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.active__currency {
+    color: var(--primary);
 }
