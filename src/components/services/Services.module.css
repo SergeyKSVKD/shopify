@@ -1,6 +1,6 @@
 .services__container {
     position: relative;
-    width: 1194px;
+    max-width: 1194px;
     height: 178px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -65,6 +65,7 @@
 
 @media (max-width: 1140px) {
     .services__container {
+        max-width: 1140px;
         grid-template-columns: 1fr;
         gap: 30px;
     }
