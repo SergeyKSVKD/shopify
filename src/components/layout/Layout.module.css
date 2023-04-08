@@ -2,14 +2,14 @@
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: auto minmax(320px, 1920px) auto;
+    grid-template-columns: minmax(340px, 1920px);
     grid-template-rows: max-content 1fr max-content;
     gap: 10px;
     min-height: 100vh;
     grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer";
+    "header"
+    "main"
+    "footer";
 } 
 
 .header {
